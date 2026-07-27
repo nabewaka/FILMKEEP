@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* カラー */
+  --color-white: #FFFFFF;
+  --color-black: #1A1A1A;
+  --color-black-soft: #555555;
+
+  /* グリーン(深)— メインカラー */
+  --color-green-dark: #1E5730;
+  --color-green-darker: #143D21;
+  --color-green-dark-light: #E4EDE7;
+
+  /* グリーン(明)*/
+  --color-green: #6E9144;
+  --color-green-hover: #5C7A38;
+  --color-green-light: #EDF2E4;
+
+  /* グレー(濃)*/
+  --color-slate: #414E4F;
+  --color-slate-dark: #2E3839;
+  --color-slate-light: #E5E8E8;
+
+  /* オレンジ — アクセントカラー */
+  --color-orange: #EAA44F;
+  --color-orange-dark: #D18A34;
+  --color-orange-light: #FBEEDC;
+
+  /* 背景 */
+  --color-bg: #EEF3EB;
+
+  /* フォント */
+  --font-serif: "Noto Serif JP", "Georgia", serif;
+  --font-sans: "Noto Sans JP", sans-serif;
+  --font-brand: var(--font-brand), "Cormorant", serif;
+  --font-catch: var(--font-catch), "Tangerine", cursive;
+
+  /* フォントサイズ */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* 角丸 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-slate);
+    font-family: var(--font-sans);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h1 {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--color-green-dark);
+  }
+
+  h2 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-green-dark);
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--color-slate);
+  }
+
+  p {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--color-black-soft);
+  }
 }
