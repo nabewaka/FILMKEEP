@@ -181,29 +181,50 @@ export default function Home() {
         </div>
         <div className="grid sm:grid-cols-3 gap-6">
           <div className="flex flex-col items-center gap-3 p-6 bg-white rounded-lg border border-green-dark-light">
-            <Image
-              src="/prototype/machine.png"
-              alt="自販機の実機プロトタイプ"
-              width={238}
-              height={791}
-              className="h-72 w-auto rounded-md"
-            />
+            <div className="flex flex-wrap justify-center gap-2">
+              <Image
+                src="/prototype/machine.png"
+                alt="自販機の実機プロトタイプ"
+                width={358}
+                height={503}
+                className="h-72 w-auto rounded-md"
+              />
+              <Image
+                src="/prototype/screen1.png"
+                alt="自販機の画面の実機プロトタイプ"
+                width={814}
+                height={1134}
+                className="h-40 w-auto rounded-md"
+              />
+              <p className="text-xs">(画面の部分を拡大したもの)</p>
+            </div>
+            
             <h3 className="text-base">実機</h3>
             <p className="text-sm text-center">
               タッチパネルと決済端末を備えた映画販売機の試作機。
             </p>
           </div>
           <div className="flex flex-col items-center gap-3 p-6 bg-white rounded-lg border border-green-dark-light">
-            <Image
-              src="/prototype/card.png"
-              alt="カードのデザイン案"
+            <div className="flex flex-wrap justify-center gap-2">
+              <Image
+              src="/prototype/card1.png"
+              alt="カードのデザイン案表"
               width={252}
               height={356}
               className="h-72 w-auto rounded-md"
             />
+              <Image
+              src="/prototype/card2.png"
+              alt="カードのデザイン案裏"
+              width={252}
+              height={356}
+              className="h-40 w-auto rounded-md"
+            />
+            </div>
+            
             <h3 className="text-base">カード</h3>
             <p className="text-sm text-center">
-              作品ごとに異なるデザインになる予定のカード（現在デザイン中のため、ポスターで代替）。
+              映画販売機から出てくる作品カードの一例。
             </p>
           </div>
           <div className="flex flex-col items-center gap-3 p-6 bg-white rounded-lg border border-green-dark-light">
@@ -211,38 +232,38 @@ export default function Home() {
               <Image
                 src="/prototype/app-1.png"
                 alt="アプリ：タップで開く"
-                width={362}
-                height={608}
-                className="h-40 w-auto rounded-md"
+                width={594}
+                height={1204}
+                className="h-72 w-auto rounded-lg"
               />
               <Image
                 src="/prototype/app-2.png"
                 alt="アプリ：スワイプで再生"
-                width={362}
-                height={608}
-                className="h-40 w-auto rounded-md"
+                width={594}
+                height={1208}
+                className="h-40 w-auto rounded-lg"
               />
               <Image
                 src="/prototype/app-3.png"
                 alt="アプリ：再生画面"
-                width={362}
-                height={608}
-                className="h-40 w-auto rounded-md"
+                width={586}
+                height={1208}
+                className="h-40 w-auto rounded-lg"
               />
             </div>
             <h3 className="text-base">アプリ</h3>
             <p className="text-sm text-center">
               カードをかざすと開く、専用アプリのプロトタイプ。
             </p>
-            {/* Figmaの操作可能プロトタイプへのリンク（準備中のため非表示）
+            {/* Figmaの操作可能プロトタイプへのリンク */}
             <a
-              href="https://www.figma.com/proto/rrkuEjh4NOpbI9KaItbWtY/%E7%84%A1%E9%A1%8C?node-id=1-4&viewport=-20%2C258%2C0.44&t=R7eA86iCQTom4OxI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4&page-id=0%3A1"
+              href="https://www.figma.com/proto/uibINsubbofZlxROqug0FZ/%E5%9B%BD%E5%AE%9D_%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E2%85%A1?node-id=1-4&p=f&viewport=28%2C297%2C0.54&t=ySqOkIJ423fNYn4X-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4&page-id=0%3A1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-green-dark underline hover:text-green-hover"
             >
               プロトタイプを操作する
-            </a> */}
+            </a>
            
           </div>
         </div>
